@@ -1,0 +1,146 @@
+export default [
+  [
+    "AN",
+    "Andamani i Nikobari"
+  ],
+  [
+    "AP",
+    "Andra Pradeš"
+  ],
+  [
+    "AR",
+    "Arunačal Pradeš"
+  ],
+  [
+    "AS",
+    "Asam"
+  ],
+  [
+    "BR",
+    "Bihar"
+  ],
+  [
+    "CH",
+    "Čandigar"
+  ],
+  [
+    "CG",
+    "Čatisgar"
+  ],
+  [
+    "DN",
+    "Dadra i Nagar Haveli"
+  ],
+  [
+    "DD",
+    "Daman i Diu"
+  ],
+  [
+    "DL",
+    "Delhi"
+  ],
+  [
+    "GA",
+    "Goa"
+  ],
+  [
+    "GJ",
+    "Gudžarat"
+  ],
+  [
+    "HR",
+    "Harajana"
+  ],
+  [
+    "HP",
+    "Himačal Pradeš"
+  ],
+  [
+    "JK",
+    "Džamu i Kašmir"
+  ],
+  [
+    "JH",
+    "Džarkand"
+  ],
+  [
+    "KA",
+    "Karnataka"
+  ],
+  [
+    "KL",
+    "Kerala"
+  ],
+  [
+    "LD",
+    "Lakadivi"
+  ],
+  [
+    "MP",
+    "Madja Pradeš"
+  ],
+  [
+    "MH",
+    "Maharaštra"
+  ],
+  [
+    "MN",
+    "Manipur"
+  ],
+  [
+    "ML",
+    "Meghalaja"
+  ],
+  [
+    "MZ",
+    "Mizoram"
+  ],
+  [
+    "NL",
+    "Nagaland"
+  ],
+  [
+    "OR",
+    "Orisa"
+  ],
+  [
+    "PY",
+    "Teritorija Pondišeri"
+  ],
+  [
+    "PB",
+    "Pandžab"
+  ],
+  [
+    "RJ",
+    "Radžastan"
+  ],
+  [
+    "SK",
+    "Sikim"
+  ],
+  [
+    "TN",
+    "Tamil Nadu"
+  ],
+  [
+    "TS",
+    "Telangana"
+  ],
+  [
+    "TR",
+    "Tripura"
+  ],
+  [
+    "UP",
+    "Utar Pradeš"
+  ],
+  [
+    "UK",
+    "Utarahand"
+  ],
+  [
+    "WB",
+    "Zapadni Bengal"
+  ]
+];

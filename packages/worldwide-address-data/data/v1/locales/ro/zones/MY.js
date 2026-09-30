@@ -1,0 +1,30 @@
+export default [
+  [
+    "KUL",
+    "Kuala Lumpur"
+  ],
+  [
+    "MLK",
+    "Malacca"
+  ],
+  [
+    "PJY",
+    "Putrajaya"
+  ],
+  [
+    "SBH",
+    "Sabah"
+  ],
+  [
+    "SWK",
+    "Sarawak"
+  ],
+  [
+    "SGR",
+    "Selangor"
+  ],
+  [
+    "TRG",
+    "Terengganu"
+  ]
+];

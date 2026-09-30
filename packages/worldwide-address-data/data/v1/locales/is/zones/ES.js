@@ -1,0 +1,30 @@
+export default [
+  [
+    "PM",
+    "Baleareyjar²"
+  ],
+  [
+    "S",
+    "Kantabría²"
+  ],
+  [
+    "CE",
+    "Ceuta"
+  ],
+  [
+    "J",
+    "Jaén"
+  ],
+  [
+    "LO",
+    "La Rioja"
+  ],
+  [
+    "ML",
+    "Melilla"
+  ],
+  [
+    "NA",
+    "Navarra²"
+  ]
+];

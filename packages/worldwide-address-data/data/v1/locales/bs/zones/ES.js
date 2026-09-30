@@ -1,0 +1,46 @@
+export default [
+  [
+    "PM",
+    "Balearska ostrva²"
+  ],
+  [
+    "S",
+    "Kantabrija²"
+  ],
+  [
+    "CE",
+    "Ceuta"
+  ],
+  [
+    "HU",
+    "Huesca"
+  ],
+  [
+    "LO",
+    "La Rioja"
+  ],
+  [
+    "ML",
+    "Melilla"
+  ],
+  [
+    "NA",
+    "Navara"
+  ],
+  [
+    "SE",
+    "Sevilla"
+  ],
+  [
+    "TE",
+    "Teruel"
+  ],
+  [
+    "TO",
+    "Toledo"
+  ],
+  [
+    "Z",
+    "Zaragoza"
+  ]
+];

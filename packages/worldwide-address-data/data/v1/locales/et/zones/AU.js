@@ -1,0 +1,34 @@
+export default [
+  [
+    "ACT",
+    "Austraalia pealinna ala"
+  ],
+  [
+    "NSW",
+    "Uus-Lõuna-Wales"
+  ],
+  [
+    "NT",
+    "Põhjaterritoorium"
+  ],
+  [
+    "QLD",
+    "Queensland"
+  ],
+  [
+    "SA",
+    "Lõuna-Austraalia"
+  ],
+  [
+    "TAS",
+    "Tasmaania"
+  ],
+  [
+    "VIC",
+    "Victoria"
+  ],
+  [
+    "WA",
+    "Lääne-Austraalia"
+  ]
+];

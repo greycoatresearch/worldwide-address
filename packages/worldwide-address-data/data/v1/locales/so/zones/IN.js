@@ -1,0 +1,6 @@
+export default [
+  [
+    "PY",
+    "Puducherry"
+  ]
+];

@@ -1,0 +1,54 @@
+export default [
+  [
+    "PA-1",
+    "Bocas del Toro"
+  ],
+  [
+    "PA-4",
+    "Chiriquí"
+  ],
+  [
+    "PA-2",
+    "Coclé"
+  ],
+  [
+    "PA-3",
+    "Colón"
+  ],
+  [
+    "PA-5",
+    "Darién"
+  ],
+  [
+    "PA-EM",
+    "Emberá-Wounaan"
+  ],
+  [
+    "PA-6",
+    "Herrera"
+  ],
+  [
+    "PA-KY",
+    "Kuna Yala"
+  ],
+  [
+    "PA-7",
+    "Los Santos"
+  ],
+  [
+    "PA-NB",
+    "Ngöbe-Buglé"
+  ],
+  [
+    "PA-8",
+    "Panama"
+  ],
+  [
+    "PA-10",
+    "Západní Panama"
+  ],
+  [
+    "PA-9",
+    "Veraguas"
+  ]
+];

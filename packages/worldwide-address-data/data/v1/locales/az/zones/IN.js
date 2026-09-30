@@ -1,0 +1,82 @@
+export default [
+  [
+    "AP",
+    "Andhra Pradeş"
+  ],
+  [
+    "AS",
+    "Assam"
+  ],
+  [
+    "BR",
+    "Bihar"
+  ],
+  [
+    "DL",
+    "Dehli"
+  ],
+  [
+    "GA",
+    "Qoa"
+  ],
+  [
+    "GJ",
+    "Qucarat"
+  ],
+  [
+    "HP",
+    "Himaçal Pradeş"
+  ],
+  [
+    "JK",
+    "Cammu və Kəşmir"
+  ],
+  [
+    "MH",
+    "Maxaraştra"
+  ],
+  [
+    "MN",
+    "Manipur"
+  ],
+  [
+    "MZ",
+    "Mizoram"
+  ],
+  [
+    "NL",
+    "Naqalend"
+  ],
+  [
+    "OR",
+    "Odisha"
+  ],
+  [
+    "PB",
+    "Pəncab ştatı"
+  ],
+  [
+    "RJ",
+    "Racastan"
+  ],
+  [
+    "SK",
+    "Sikkim"
+  ],
+  [
+    "TN",
+    "Tamilnad"
+  ],
+  [
+    "TS",
+    "Telanqana"
+  ],
+  [
+    "TR",
+    "Tripura"
+  ],
+  [
+    "UP",
+    "Uttar Pradeş"
+  ]
+];

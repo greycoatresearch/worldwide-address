@@ -1,0 +1,50 @@
+export default [
+  [
+    "PH-BAS",
+    "Basilan"
+  ],
+  [
+    "PH-BOH",
+    "Bohol"
+  ],
+  [
+    "PH-BUL",
+    "Bulacan"
+  ],
+  [
+    "PH-CAG",
+    "Cagayan"
+  ],
+  [
+    "PH-CAT",
+    "Catanduanes"
+  ],
+  [
+    "PH-CEB",
+    "Cebu"
+  ],
+  [
+    "PH-00",
+    "Metro Manila"
+  ],
+  [
+    "PH-NUE",
+    "Nueva Ecija"
+  ],
+  [
+    "PH-PLW",
+    "Palawan"
+  ],
+  [
+    "PH-WSA",
+    "Samar"
+  ],
+  [
+    "PH-SIG",
+    "Siquijor"
+  ],
+  [
+    "PH-TAW",
+    "Tawi-Tawi"
+  ]
+];

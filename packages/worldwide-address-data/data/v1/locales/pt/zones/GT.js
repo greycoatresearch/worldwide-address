@@ -1,0 +1,90 @@
+export default [
+  [
+    "AVE",
+    "Alta Verapaz"
+  ],
+  [
+    "BVE",
+    "Baja Verapaz"
+  ],
+  [
+    "CMT",
+    "Chimaltenango"
+  ],
+  [
+    "CQM",
+    "Chiquimula"
+  ],
+  [
+    "EPR",
+    "El Progreso"
+  ],
+  [
+    "ESC",
+    "Escuintla"
+  ],
+  [
+    "GUA",
+    "Guatemala"
+  ],
+  [
+    "HUE",
+    "Huehuetenango"
+  ],
+  [
+    "IZA",
+    "Izabal"
+  ],
+  [
+    "JAL",
+    "Jalapa"
+  ],
+  [
+    "JUT",
+    "Jutiapa"
+  ],
+  [
+    "PET",
+    "El Petén"
+  ],
+  [
+    "QUE",
+    "Quetzaltenango"
+  ],
+  [
+    "QUI",
+    "El Quiché"
+  ],
+  [
+    "RET",
+    "Retalhuleu"
+  ],
+  [
+    "SAC",
+    "Sacatepéquez"
+  ],
+  [
+    "SMA",
+    "San Marcos"
+  ],
+  [
+    "SRO",
+    "Santa Rosa"
+  ],
+  [
+    "SOL",
+    "Sololá"
+  ],
+  [
+    "SUC",
+    "Suchitepéquez"
+  ],
+  [
+    "TOT",
+    "Totonicapán"
+  ],
+  [
+    "ZAC",
+    "Zacapa"
+  ]
+];

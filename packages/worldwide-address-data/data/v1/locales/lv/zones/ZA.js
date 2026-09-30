@@ -1,0 +1,30 @@
+export default [
+  [
+    "EC",
+    "Austrumkāpa"
+  ],
+  [
+    "FS",
+    "Frīsteita"
+  ],
+  [
+    "LP",
+    "Limpopo"
+  ],
+  [
+    "MP",
+    "Mpumalanga"
+  ],
+  [
+    "NW",
+    "Ziemeļrietumi"
+  ],
+  [
+    "NC",
+    "Ziemeļkāpa"
+  ],
+  [
+    "WC",
+    "Rietumkāpa"
+  ]
+];

@@ -1,0 +1,110 @@
+export default [
+  [
+    "SHR",
+    "Xarqia"
+  ],
+  [
+    "ALX",
+    "Alexandria (província egípcia)"
+  ],
+  [
+    "ASN",
+    "Assuão"
+  ],
+  [
+    "AST",
+    "Assiut"
+  ],
+  [
+    "BH",
+    "Al-Buhaira"
+  ],
+  [
+    "BNS",
+    "Beni Suef"
+  ],
+  [
+    "C",
+    "Cairo"
+  ],
+  [
+    "DK",
+    "Dakahlia"
+  ],
+  [
+    "DT",
+    "Damieta"
+  ],
+  [
+    "FYM",
+    "Faium"
+  ],
+  [
+    "GH",
+    "Garbia"
+  ],
+  [
+    "GZ",
+    "Guizé"
+  ],
+  [
+    "IS",
+    "Ismaília"
+  ],
+  [
+    "KFS",
+    "Kafr el-Sheikh"
+  ],
+  [
+    "LX",
+    "Luxor"
+  ],
+  [
+    "MT",
+    "Matruh"
+  ],
+  [
+    "MN",
+    "Minya"
+  ],
+  [
+    "MNF",
+    "Monufia"
+  ],
+  [
+    "WAD",
+    "Vale Novo"
+  ],
+  [
+    "SIN",
+    "Sinai do Norte"
+  ],
+  [
+    "PTS",
+    "Governamento de Porto Said"
+  ],
+  [
+    "KB",
+    "Qaliubia"
+  ],
+  [
+    "KN",
+    "Qina"
+  ],
+  [
+    "BA",
+    "Mar Vermelho"
+  ],
+  [
+    "SHG",
+    "Sohag"
+  ],
+  [
+    "JS",
+    "Sinai do Sul"
+  ],
+  [
+    "SUZ",
+    "Suez"
+  ]
+];

@@ -1,0 +1,26 @@
+export default [
+  [
+    "BJ",
+    "Beijing"
+  ],
+  [
+    "FJ",
+    "Fujian"
+  ],
+  [
+    "JL",
+    "Jilin"
+  ],
+  [
+    "NX",
+    "Ningxia"
+  ],
+  [
+    "SH",
+    "Shanghai"
+  ],
+  [
+    "XJ",
+    "Xinjiang"
+  ]
+];

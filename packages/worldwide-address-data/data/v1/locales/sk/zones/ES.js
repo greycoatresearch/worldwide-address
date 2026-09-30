@@ -1,0 +1,30 @@
+export default [
+  [
+    "C",
+    "Provincia La Coruña"
+  ],
+  [
+    "PM",
+    "Baleáry²"
+  ],
+  [
+    "S",
+    "Kantábria²"
+  ],
+  [
+    "CE",
+    "Ceuta"
+  ],
+  [
+    "LE",
+    "León"
+  ],
+  [
+    "ML",
+    "Melilla"
+  ],
+  [
+    "NA",
+    "Navarra²"
+  ]
+];

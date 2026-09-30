@@ -1,0 +1,110 @@
+export default [
+  [
+    "SHR",
+    "Al Sharqia"
+  ],
+  [
+    "ALX",
+    "Alexandria"
+  ],
+  [
+    "ASN",
+    "Aswan"
+  ],
+  [
+    "AST",
+    "Asyut"
+  ],
+  [
+    "BH",
+    "Beheira"
+  ],
+  [
+    "BNS",
+    "Beni Suef"
+  ],
+  [
+    "C",
+    "Cairo"
+  ],
+  [
+    "DK",
+    "Dakahlia"
+  ],
+  [
+    "DT",
+    "Damietta"
+  ],
+  [
+    "FYM",
+    "Faiyum"
+  ],
+  [
+    "GH",
+    "Gharbia"
+  ],
+  [
+    "GZ",
+    "Giza"
+  ],
+  [
+    "IS",
+    "Ismailia"
+  ],
+  [
+    "KFS",
+    "Kafr el-Sheikh"
+  ],
+  [
+    "LX",
+    "Luxor"
+  ],
+  [
+    "MT",
+    "Matrouh"
+  ],
+  [
+    "MN",
+    "Minya"
+  ],
+  [
+    "MNF",
+    "Monufia"
+  ],
+  [
+    "WAD",
+    "New Valley"
+  ],
+  [
+    "SIN",
+    "North Sinai"
+  ],
+  [
+    "PTS",
+    "Port Said"
+  ],
+  [
+    "KB",
+    "Qalyubia"
+  ],
+  [
+    "KN",
+    "Qena"
+  ],
+  [
+    "BA",
+    "Red Sea"
+  ],
+  [
+    "SHG",
+    "Sohag"
+  ],
+  [
+    "JS",
+    "South Sinai"
+  ],
+  [
+    "SUZ",
+    "Suez"
+  ]
+];

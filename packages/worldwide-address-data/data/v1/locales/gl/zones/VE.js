@@ -1,0 +1,30 @@
+export default [
+  [
+    "VE-Z",
+    "Amazonas"
+  ],
+  [
+    "VE-B",
+    "Anzoátegui"
+  ],
+  [
+    "VE-C",
+    "Apure"
+  ],
+  [
+    "VE-F",
+    "Estado Bolívar"
+  ],
+  [
+    "VE-I",
+    "Falcón"
+  ],
+  [
+    "VE-U",
+    "Yaracuy"
+  ],
+  [
+    "VE-V",
+    "Zulia"
+  ]
+];

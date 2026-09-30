@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm format:check
+      - run: pnpm lint
+      - run: pnpm typecheck
+
+      # The committed data must be exactly what the pinned upstream and the generator produce
+      - run: pnpm generate
+      - name: Check generated data is up to date
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --short | head -50
+            echo "::error::Generated data is out of date. Run 'pnpm generate' and commit the result."
+            exit 1
+          fi
+
+      - run: pnpm test
+
+      # pack runs the build (prepack)
+      - run: pnpm --filter @greycoatresearch/worldwide-address-data pack --pack-destination "$RUNNER_TEMP/pack"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: package
+          path: ${{ runner.temp }}/pack/*.tgz
+          if-no-files-found: error
+
+  # Install the packed tarball into a fresh project on every supported Node version.
+  # Only node and npm are needed here, so it can run below the workspace's own Node version.
+  smoke:
+    needs: check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: packages/worldwide-address-data/scripts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: actions/download-artifact@v8
+        with:
+          name: package
+          path: ${{ runner.temp }}/pack
+      - run: node packages/worldwide-address-data/scripts/smoke-test.ts "$RUNNER_TEMP"/pack/*.tgz

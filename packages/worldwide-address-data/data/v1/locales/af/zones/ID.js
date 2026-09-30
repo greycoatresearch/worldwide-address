@@ -1,0 +1,34 @@
+export default [
+  [
+    "AC",
+    "Aceh"
+  ],
+  [
+    "BA",
+    "Bali"
+  ],
+  [
+    "BT",
+    "Banten"
+  ],
+  [
+    "JK",
+    "Djakarta"
+  ],
+  [
+    "JT",
+    "Jawa Tengah"
+  ],
+  [
+    "PA",
+    "Papoea"
+  ],
+  [
+    "SS",
+    "Suid-Sumatra"
+  ],
+  [
+    "YO",
+    "Yogyakarta"
+  ]
+];

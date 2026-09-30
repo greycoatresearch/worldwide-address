@@ -1,0 +1,146 @@
+export default [
+  [
+    "AN",
+    "Andamão e Nicobar"
+  ],
+  [
+    "AP",
+    "Andhra Pradesh"
+  ],
+  [
+    "AR",
+    "Arunachal Pradesh"
+  ],
+  [
+    "AS",
+    "Assam"
+  ],
+  [
+    "BR",
+    "Bihar"
+  ],
+  [
+    "CH",
+    "Chandigarh"
+  ],
+  [
+    "CG",
+    "Chhattisgarh"
+  ],
+  [
+    "DN",
+    "Dadrá e Nagar-Aveli"
+  ],
+  [
+    "DD",
+    "Damão e Diu"
+  ],
+  [
+    "DL",
+    "Deli"
+  ],
+  [
+    "GA",
+    "Goa"
+  ],
+  [
+    "GJ",
+    "Gujarate"
+  ],
+  [
+    "HR",
+    "Haryana"
+  ],
+  [
+    "HP",
+    "Himachal Pradesh"
+  ],
+  [
+    "JK",
+    "Jammu e Caxemira"
+  ],
+  [
+    "JH",
+    "Jharkhand"
+  ],
+  [
+    "KA",
+    "Karnataka"
+  ],
+  [
+    "KL",
+    "Kerala"
+  ],
+  [
+    "LD",
+    "Laquedivas"
+  ],
+  [
+    "MP",
+    "Madhya Pradesh"
+  ],
+  [
+    "MH",
+    "Maharashtra"
+  ],
+  [
+    "MN",
+    "Manipur"
+  ],
+  [
+    "ML",
+    "Meghalaya"
+  ],
+  [
+    "MZ",
+    "Mizoram"
+  ],
+  [
+    "NL",
+    "Nagaland"
+  ],
+  [
+    "OR",
+    "Odisha"
+  ],
+  [
+    "PY",
+    "Puducherry"
+  ],
+  [
+    "PB",
+    "Punjab"
+  ],
+  [
+    "RJ",
+    "Rajastão"
+  ],
+  [
+    "SK",
+    "Siquim"
+  ],
+  [
+    "TN",
+    "Tamil Nadu"
+  ],
+  [
+    "TS",
+    "Telangana"
+  ],
+  [
+    "TR",
+    "Tripura"
+  ],
+  [
+    "UP",
+    "Uttar Pradesh"
+  ],
+  [
+    "UK",
+    "Uttarakhand"
+  ],
+  [
+    "WB",
+    "Bengala Ocidental"
+  ]
+];

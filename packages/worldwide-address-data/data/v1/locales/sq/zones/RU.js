@@ -1,0 +1,58 @@
+export default [
+  [
+    "AD",
+    "Adigjeja"
+  ],
+  [
+    "BA",
+    "Bashkortostani"
+  ],
+  [
+    "BU",
+    "Burjatia"
+  ],
+  [
+    "CE",
+    "Çeçenia"
+  ],
+  [
+    "CU",
+    "Çuvashia"
+  ],
+  [
+    "DA",
+    "Dagestani"
+  ],
+  [
+    "KAM",
+    "Kamçatka Krai"
+  ],
+  [
+    "KR",
+    "Karelia"
+  ],
+  [
+    "MOW",
+    "Moska"
+  ],
+  [
+    "SPE",
+    "Shën Petersburgu"
+  ],
+  [
+    "SA",
+    "Sahaja"
+  ],
+  [
+    "SE",
+    "Osetia e Veriut-Alania"
+  ],
+  [
+    "TA",
+    "Tataristani"
+  ],
+  [
+    "TY",
+    "Tëvaja"
+  ]
+];

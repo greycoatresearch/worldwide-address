@@ -1,0 +1,26 @@
+export default [
+  [
+    "AMA",
+    "Amazonas"
+  ],
+  [
+    "ANT",
+    "Antioquia"
+  ],
+  [
+    "ARA",
+    "Arauca"
+  ],
+  [
+    "ATL",
+    "Atlántico"
+  ],
+  [
+    "DC",
+    "Bogotá"
+  ],
+  [
+    "BOY",
+    "Boyacá"
+  ]
+];

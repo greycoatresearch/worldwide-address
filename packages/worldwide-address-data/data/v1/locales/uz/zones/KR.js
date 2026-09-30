@@ -1,0 +1,22 @@
+export default [
+  [
+    "KR-26",
+    "Pusan"
+  ],
+  [
+    "KR-30",
+    "Daejeon"
+  ],
+  [
+    "KR-28",
+    "Inchxon"
+  ],
+  [
+    "KR-11",
+    "Seul"
+  ],
+  [
+    "KR-31",
+    "Ulsan"
+  ]
+];

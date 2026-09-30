@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // Node 24
+    "target": "es2025",
+    "lib": ["es2025"],
+    "module": "nodenext",
+    "types": [],
+
+    // Type-check only by default; packages that publish override this in their build config
+    "noEmit": true,
+
+    // Node runs .ts directly (type stripping): .ts import specifiers, erasable syntax only
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true
+  }
+}

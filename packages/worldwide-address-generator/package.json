@@ -1,0 +1,21 @@
+{
+  "name": "@greycoatresearch/worldwide-address-generator",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "upstream:fetch": "node src/fetch.ts",
+    "generate": "node --conditions=@greycoatresearch/source src/generate.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@greycoatresearch/worldwide-address-data": "workspace:*",
+    "yaml": "^2.6.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

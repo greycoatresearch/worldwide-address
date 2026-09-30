@@ -1,0 +1,34 @@
+export default [
+  [
+    "BZ",
+    "Suid-Tirool"
+  ],
+  [
+    "CS",
+    "Cosenza"
+  ],
+  [
+    "FE",
+    "Ferrara"
+  ],
+  [
+    "FC",
+    "Forlì-Cesena"
+  ],
+  [
+    "MO",
+    "Modena"
+  ],
+  [
+    "RA",
+    "Ravenna"
+  ],
+  [
+    "TN",
+    "Trentino"
+  ],
+  [
+    "TV",
+    "Treviso (provinsie)"
+  ]
+];

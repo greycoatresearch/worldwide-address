@@ -1,0 +1,34 @@
+export default [
+  [
+    "JHR",
+    "Johor"
+  ],
+  [
+    "KDH",
+    "Kedah"
+  ],
+  [
+    "KTN",
+    "Kelatan"
+  ],
+  [
+    "KUL",
+    "Kuala Lumpur"
+  ],
+  [
+    "MLK",
+    "Malaca"
+  ],
+  [
+    "PRK",
+    "Perak"
+  ],
+  [
+    "PJY",
+    "Putrajaya"
+  ],
+  [
+    "SGR",
+    "Selangor"
+  ]
+];

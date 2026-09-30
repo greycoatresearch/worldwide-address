@@ -1,0 +1,106 @@
+export default [
+  [
+    "CW",
+    "Contae Cheatharlach"
+  ],
+  [
+    "CN",
+    "Cavan"
+  ],
+  [
+    "CE",
+    "Clare"
+  ],
+  [
+    "CO",
+    "Contae Chorcaí"
+  ],
+  [
+    "DL",
+    "Donegal"
+  ],
+  [
+    "D",
+    "Dublin"
+  ],
+  [
+    "G",
+    "Galway"
+  ],
+  [
+    "KY",
+    "Contae Chiarraí"
+  ],
+  [
+    "KE",
+    "Kildare"
+  ],
+  [
+    "KK",
+    "Kilkenny"
+  ],
+  [
+    "LS",
+    "Grófstvo Laois"
+  ],
+  [
+    "LM",
+    "Leitrim"
+  ],
+  [
+    "LK",
+    "Limerick"
+  ],
+  [
+    "LD",
+    "Longford (grófstvo)"
+  ],
+  [
+    "LH",
+    "Grófstvo Louth"
+  ],
+  [
+    "MO",
+    "Mayo"
+  ],
+  [
+    "MH",
+    "Meath"
+  ],
+  [
+    "MN",
+    "Monaghan"
+  ],
+  [
+    "OY",
+    "Offaly"
+  ],
+  [
+    "RN",
+    "Contae Ros Comáin"
+  ],
+  [
+    "SO",
+    "Sligo"
+  ],
+  [
+    "TA",
+    "Tipperary"
+  ],
+  [
+    "WD",
+    "Waterford"
+  ],
+  [
+    "WH",
+    "Westmeath"
+  ],
+  [
+    "WX",
+    "Wexford"
+  ],
+  [
+    "WW",
+    "Wicklow"
+  ]
+];

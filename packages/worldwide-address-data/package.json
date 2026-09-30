@@ -1,0 +1,74 @@
+{
+  "name": "@greycoatresearch/worldwide-address-data",
+  "version": "0.1.0",
+  "description": "Address form data (layouts, zones, zip rules, labels) derived from Shopify/worldwide",
+  "keywords": [
+    "address",
+    "address-form",
+    "cldr",
+    "i18n",
+    "postal-code",
+    "provinces",
+    "shopify",
+    "worldwide",
+    "zones"
+  ],
+  "homepage": "https://github.com/jangjunha/worldwide-address/tree/main/packages/worldwide-address-data#readme",
+  "bugs": "https://github.com/jangjunha/worldwide-address/issues",
+  "license": "MIT AND Unicode-DFS-2016",
+  "author": "Greycoat Research Inc.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jangjunha/worldwide-address.git",
+    "directory": "packages/worldwide-address-data"
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "@greycoatresearch/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./schema": {
+      "@greycoatresearch/source": "./src/schema.ts",
+      "types": "./dist/schema.d.ts",
+      "default": "./dist/schema.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "./schema": {
+        "types": "./dist/schema.d.ts",
+        "default": "./dist/schema.js"
+      },
+      "./package.json": "./package.json"
+    },
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json",
+    "prepack": "pnpm run build",
+    "typecheck": "tsc",
+    "test": "node --test 'test/**/*.test.ts'",
+    "test:smoke": "node scripts/smoke-test.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

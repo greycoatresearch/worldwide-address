@@ -1,0 +1,54 @@
+export default [
+  [
+    "AB",
+    "Alberta"
+  ],
+  [
+    "BC",
+    "Brits-Columbië"
+  ],
+  [
+    "MB",
+    "Manitoba"
+  ],
+  [
+    "NB",
+    "Nieu-Brunswyk"
+  ],
+  [
+    "NL",
+    "Newfoundland en Labrador"
+  ],
+  [
+    "NT",
+    "Noordwestelike gebiede"
+  ],
+  [
+    "NS",
+    "Nova Scotia"
+  ],
+  [
+    "NU",
+    "Nunavut"
+  ],
+  [
+    "ON",
+    "Ontario"
+  ],
+  [
+    "PE",
+    "Prins-Edward-Eiland"
+  ],
+  [
+    "QC",
+    "Quebec"
+  ],
+  [
+    "SK",
+    "Saskatchewan"
+  ],
+  [
+    "YT",
+    "Yukon"
+  ]
+];

@@ -1,0 +1,30 @@
+export default [
+  [
+    "CR-A",
+    "Alahuela"
+  ],
+  [
+    "CR-C",
+    "Kartago"
+  ],
+  [
+    "CR-G",
+    "Gvanakaste"
+  ],
+  [
+    "CR-H",
+    "Eredija"
+  ],
+  [
+    "CR-L",
+    "Limon"
+  ],
+  [
+    "CR-P",
+    "Puntarenas"
+  ],
+  [
+    "CR-SJ",
+    "San Hose"
+  ]
+];

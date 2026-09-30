@@ -1,0 +1,46 @@
+export default [
+  [
+    "KR-26",
+    "Busan"
+  ],
+  [
+    "KR-27",
+    "Daegu"
+  ],
+  [
+    "KR-30",
+    "Daejeon"
+  ],
+  [
+    "KR-42",
+    "Gangwon-do"
+  ],
+  [
+    "KR-29",
+    "Gwangju"
+  ],
+  [
+    "KR-47",
+    "Gyeongsangbuk-do"
+  ],
+  [
+    "KR-41",
+    "Gyeonggi-do"
+  ],
+  [
+    "KR-28",
+    "Incheon"
+  ],
+  [
+    "KR-49",
+    "Insula Jeju"
+  ],
+  [
+    "KR-11",
+    "Seul"
+  ],
+  [
+    "KR-31",
+    "Ulsan"
+  ]
+];

@@ -1,0 +1,22 @@
+export default [
+  [
+    "BO",
+    "Borno"
+  ],
+  [
+    "KN",
+    "Kano"
+  ],
+  [
+    "PL",
+    "Plateau"
+  ],
+  [
+    "RI",
+    "Rivers"
+  ],
+  [
+    "YO",
+    "Yobe"
+  ]
+];

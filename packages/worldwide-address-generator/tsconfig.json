@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    // Resolve @greycoatresearch/worldwide-address-data to its src/*.ts, matching `node --conditions`
+    "customConditions": ["@greycoatresearch/source"]
+  },
+  "include": ["src"]
+}

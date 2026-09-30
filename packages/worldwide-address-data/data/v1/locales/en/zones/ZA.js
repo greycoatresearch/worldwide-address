@@ -1,0 +1,34 @@
+export default [
+  [
+    "EC",
+    "Eastern Cape"
+  ],
+  [
+    "FS",
+    "Free State"
+  ],
+  [
+    "NL",
+    "KwaZulu-Natal"
+  ],
+  [
+    "LP",
+    "Limpopo"
+  ],
+  [
+    "MP",
+    "Mpumalanga"
+  ],
+  [
+    "NW",
+    "North West"
+  ],
+  [
+    "NC",
+    "Northern Cape"
+  ],
+  [
+    "WC",
+    "Western Cape"
+  ]
+];

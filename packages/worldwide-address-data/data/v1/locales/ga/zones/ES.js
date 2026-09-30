@@ -1,0 +1,62 @@
+export default [
+  [
+    "C",
+    "A Coruña"
+  ],
+  [
+    "BA",
+    "Badajoz"
+  ],
+  [
+    "PM",
+    "Na hOileáin Bhailéaracha²"
+  ],
+  [
+    "CC",
+    "Cáceres"
+  ],
+  [
+    "S",
+    "Cantabria²"
+  ],
+  [
+    "CE",
+    "Ceuta"
+  ],
+  [
+    "CO",
+    "Córdoba"
+  ],
+  [
+    "CU",
+    "Cuenca"
+  ],
+  [
+    "GR",
+    "Granada"
+  ],
+  [
+    "LO",
+    "La Rioja"
+  ],
+  [
+    "MA",
+    "Málaga"
+  ],
+  [
+    "ML",
+    "Melilla"
+  ],
+  [
+    "NA",
+    "Navarra"
+  ],
+  [
+    "OR",
+    "Ourense"
+  ],
+  [
+    "VA",
+    "Valladolid"
+  ]
+];

@@ -1,0 +1,70 @@
+export default [
+  [
+    "AUK",
+    "Auckland"
+  ],
+  [
+    "BOP",
+    "Bay of Plenty"
+  ],
+  [
+    "CAN",
+    "Canterbury, Nya Zeeland"
+  ],
+  [
+    "CIT",
+    "Chathamöarna"
+  ],
+  [
+    "GIS",
+    "Gisborne"
+  ],
+  [
+    "HKB",
+    "Hawke’s Bay"
+  ],
+  [
+    "MWT",
+    "Manawatu-Wanganui"
+  ],
+  [
+    "MBH",
+    "Marlborough, Nya Zeeland"
+  ],
+  [
+    "NSN",
+    "Nelson"
+  ],
+  [
+    "NTL",
+    "Northland"
+  ],
+  [
+    "OTA",
+    "Otago"
+  ],
+  [
+    "STL",
+    "Southland"
+  ],
+  [
+    "TKI",
+    "Taranaki"
+  ],
+  [
+    "TAS",
+    "Tasman"
+  ],
+  [
+    "WKO",
+    "Waikato"
+  ],
+  [
+    "WGN",
+    "Wellington"
+  ],
+  [
+    "WTC",
+    "West Coast"
+  ]
+];

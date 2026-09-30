@@ -1,0 +1,30 @@
+export default [
+  [
+    "EC",
+    "Ostkap"
+  ],
+  [
+    "FS",
+    "Freistaat"
+  ],
+  [
+    "LP",
+    "Limpopo"
+  ],
+  [
+    "MP",
+    "Mpumalanga"
+  ],
+  [
+    "NW",
+    "Nordwest"
+  ],
+  [
+    "NC",
+    "Nordkap"
+  ],
+  [
+    "WC",
+    "Westkap"
+  ]
+];

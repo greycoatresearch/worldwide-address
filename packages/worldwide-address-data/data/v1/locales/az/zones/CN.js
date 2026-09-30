@@ -1,0 +1,74 @@
+export default [
+  [
+    "AH",
+    "Anhoy"
+  ],
+  [
+    "BJ",
+    "Pekin"
+  ],
+  [
+    "CQ",
+    "Çuntsin"
+  ],
+  [
+    "FJ",
+    "Fucyen"
+  ],
+  [
+    "GS",
+    "Qansu"
+  ],
+  [
+    "GX",
+    "Quansi-Çjuan muxtar rayonu"
+  ],
+  [
+    "HI",
+    "Haynan"
+  ],
+  [
+    "HE",
+    "Hebei"
+  ],
+  [
+    "HN",
+    "Xunan"
+  ],
+  [
+    "NM",
+    "Daxili Monqolustan Muxtar Rayonu"
+  ],
+  [
+    "JS",
+    "Cianqsu"
+  ],
+  [
+    "JX",
+    "Jianqxi"
+  ],
+  [
+    "NX",
+    "Ninsya-Huey Muxtar Rayonu"
+  ],
+  [
+    "SH",
+    "Şanxay"
+  ],
+  [
+    "SC",
+    "Sıçuan"
+  ],
+  [
+    "TJ",
+    "Tyantszin"
+  ],
+  [
+    "YZ",
+    "Tibet muxtar rayonu"
+  ],
+  [
+    "ZJ",
+    "Çjetszyan"
+  ]
+];

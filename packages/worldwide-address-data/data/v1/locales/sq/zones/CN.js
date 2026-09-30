@@ -1,0 +1,26 @@
+export default [
+  [
+    "BJ",
+    "Pekini"
+  ],
+  [
+    "CQ",
+    "Çongqing"
+  ],
+  [
+    "SH",
+    "Shangai"
+  ],
+  [
+    "TJ",
+    "Tianxhin"
+  ],
+  [
+    "XJ",
+    "Sinkiang"
+  ],
+  [
+    "YZ",
+    "Tibet"
+  ]
+];

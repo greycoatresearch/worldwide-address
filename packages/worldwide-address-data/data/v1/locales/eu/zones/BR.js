@@ -1,0 +1,110 @@
+export default [
+  [
+    "AC",
+    "Acre"
+  ],
+  [
+    "AL",
+    "Alagoas"
+  ],
+  [
+    "AP",
+    "Amapá"
+  ],
+  [
+    "AM",
+    "Amazonas"
+  ],
+  [
+    "BA",
+    "Bahiako estatua"
+  ],
+  [
+    "CE",
+    "Ceará"
+  ],
+  [
+    "DF",
+    "Barruti Federala"
+  ],
+  [
+    "ES",
+    "Espírito Santo"
+  ],
+  [
+    "GO",
+    "Goiás"
+  ],
+  [
+    "MA",
+    "Maranhão"
+  ],
+  [
+    "MT",
+    "Mato Grosso"
+  ],
+  [
+    "MS",
+    "Mato Grosso do Sul"
+  ],
+  [
+    "MG",
+    "Minas Gerais"
+  ],
+  [
+    "PA",
+    "Pará"
+  ],
+  [
+    "PB",
+    "Paraíba"
+  ],
+  [
+    "PR",
+    "Paraná"
+  ],
+  [
+    "PE",
+    "Pernambuco"
+  ],
+  [
+    "PI",
+    "Piauí"
+  ],
+  [
+    "RJ",
+    "Rio de Janeiroko estatua"
+  ],
+  [
+    "RN",
+    "Rio Grande do Norte"
+  ],
+  [
+    "RS",
+    "Rio Grande do Sul"
+  ],
+  [
+    "RO",
+    "Rondônia"
+  ],
+  [
+    "RR",
+    "Roraima"
+  ],
+  [
+    "SC",
+    "Santa Catarina"
+  ],
+  [
+    "SP",
+    "São Pauloko estatua"
+  ],
+  [
+    "SE",
+    "Sergipe"
+  ],
+  [
+    "TO",
+    "Tocantins"
+  ]
+];

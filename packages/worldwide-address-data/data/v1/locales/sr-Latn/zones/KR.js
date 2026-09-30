@@ -1,0 +1,34 @@
+export default [
+  [
+    "KR-26",
+    "Busan"
+  ],
+  [
+    "KR-27",
+    "Tegu"
+  ],
+  [
+    "KR-30",
+    "Tedžon"
+  ],
+  [
+    "KR-29",
+    "Kvangdžu"
+  ],
+  [
+    "KR-28",
+    "Inčon"
+  ],
+  [
+    "KR-49",
+    "Čedžu"
+  ],
+  [
+    "KR-11",
+    "Seul"
+  ],
+  [
+    "KR-31",
+    "Ulsan"
+  ]
+];

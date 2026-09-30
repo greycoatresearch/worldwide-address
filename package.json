@@ -1,0 +1,24 @@
+{
+  "name": "worldwide-address",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "generate": "pnpm --filter worldwide-address-generator generate",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "test:smoke": "pnpm --filter @greycoatresearch/worldwide-address-data test:smoke",
+    "lint": "oxlint .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.27.0"
+}

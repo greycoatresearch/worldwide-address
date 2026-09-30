@@ -1,0 +1,30 @@
+export default [
+  [
+    "EC",
+    "Oost-Kaap"
+  ],
+  [
+    "FS",
+    "Vrijstaat"
+  ],
+  [
+    "LP",
+    "Limpopo"
+  ],
+  [
+    "MP",
+    "Mpumalanga"
+  ],
+  [
+    "NW",
+    "Noordwest"
+  ],
+  [
+    "NC",
+    "Noord-Kaap"
+  ],
+  [
+    "WC",
+    "West-Kaap"
+  ]
+];

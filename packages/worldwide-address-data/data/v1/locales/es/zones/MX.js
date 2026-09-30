@@ -1,0 +1,130 @@
+export default [
+  [
+    "AGS",
+    "Aguascalientes"
+  ],
+  [
+    "BC",
+    "Baja California"
+  ],
+  [
+    "BCS",
+    "Baja California Sur"
+  ],
+  [
+    "CAMP",
+    "Campeche"
+  ],
+  [
+    "CHIS",
+    "Chiapas"
+  ],
+  [
+    "CHIH",
+    "Chihuahua"
+  ],
+  [
+    "DF",
+    "Ciudad de México"
+  ],
+  [
+    "COAH",
+    "Coahuila de Zaragoza"
+  ],
+  [
+    "COL",
+    "Colima"
+  ],
+  [
+    "DGO",
+    "Durango"
+  ],
+  [
+    "GTO",
+    "Guanajuato"
+  ],
+  [
+    "GRO",
+    "Estado de Guerrero"
+  ],
+  [
+    "HGO",
+    "Estado de Hidalgo"
+  ],
+  [
+    "JAL",
+    "Jalisco"
+  ],
+  [
+    "MEX",
+    "Estado de México"
+  ],
+  [
+    "MICH",
+    "Michoacán"
+  ],
+  [
+    "MOR",
+    "Morelos"
+  ],
+  [
+    "NAY",
+    "Nayarit"
+  ],
+  [
+    "NL",
+    "Nuevo León"
+  ],
+  [
+    "OAX",
+    "Oaxaca"
+  ],
+  [
+    "PUE",
+    "Puebla"
+  ],
+  [
+    "QRO",
+    "Querétaro"
+  ],
+  [
+    "Q ROO",
+    "Quintana Roo"
+  ],
+  [
+    "SLP",
+    "San Luis Potosí"
+  ],
+  [
+    "SIN",
+    "Sinaloa"
+  ],
+  [
+    "SON",
+    "Sonora"
+  ],
+  [
+    "TAB",
+    "Tabasco"
+  ],
+  [
+    "TAMPS",
+    "Tamaulipas"
+  ],
+  [
+    "TLAX",
+    "Tlaxcala"
+  ],
+  [
+    "VER",
+    "Veracruz"
+  ],
+  [
+    "YUC",
+    "Yucatán"
+  ],
+  [
+    "ZAC",
+    "Zacatecas"
+  ]
+];
