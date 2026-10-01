@@ -35,8 +35,8 @@ await loadLabels("ko"); // { default: { ... }, countries: { KR: { province: { la
 ```
 
 - `countries` and `meta` are bundled with the entry point.
-- Zones, zone names and labels are loaded on demand, one module per country or locale, so a
-  bundler only ships what you request.
+- Everything else is loaded on demand as separate chunks: zones one module per country, zone
+  names and labels one module per locale. A browser only downloads what you request.
 - Loaders return `undefined` when there is no data for the key.
 - Locale tags match exactly as listed in `meta.locales` (CLDR tags for zone names, worldwide tags
   for labels). No fallback is applied.

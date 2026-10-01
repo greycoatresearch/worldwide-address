@@ -1,8 +1,8 @@
 /**
  * Address form data derived from Shopify/worldwide.
  *
- * `countries` and `meta` are bundled statically. Zones, zone names and labels are loaded on
- * demand, one module per country or locale, so bundlers only ship what is actually requested.
+ * `countries` and `meta` are bundled statically. The rest is loaded on demand: zones one module
+ * per country, zone names and labels one module per locale.
  *
  * Locales match exactly as listed in `meta.locales`; no fallback is applied.
  */
@@ -15,6 +15,7 @@ import type {
   CountryCode,
   LabelsFile,
   Locale,
+  LocalizedZones,
   LocalizedZonesFile,
   MetaFile,
   ZonesFile,
@@ -40,9 +41,10 @@ export async function loadZones(country: CountryCode): Promise<ZonesFile | undef
 export async function loadZoneNames(
   locale: Locale,
   country: CountryCode,
-): Promise<LocalizedZonesFile | undefined> {
-  const byCountry = await load(zoneNameLoaders, locale);
-  return byCountry && ((await load(byCountry, country)) as LocalizedZonesFile | undefined);
+): Promise<LocalizedZones | undefined> {
+  // One module per locale holds every country, so switching countries loads nothing new
+  const byCountry = (await load(zoneNameLoaders, locale)) as LocalizedZonesFile | undefined;
+  return byCountry && Object.hasOwn(byCountry, country) ? byCountry[country] : undefined;
 }
 
 /** Field labels for a locale (defaults plus per-country overrides), or undefined if unavailable */

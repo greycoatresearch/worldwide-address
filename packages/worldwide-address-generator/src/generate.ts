@@ -18,6 +18,7 @@ import {
   FIELD_NAMES,
   LabelsFile,
   LocalizedZonesFile,
+  type LocalizedZones,
   MetaFile,
   SCHEMA_VERSION,
   ZonesFile,
@@ -152,8 +153,8 @@ function cldrKey(iso: string): string {
 function buildLocalizedZones(
   subdivisions: Record<string, unknown>,
   zones: ZonesFile,
-): LocalizedZonesFile {
-  const out: LocalizedZonesFile = [];
+): LocalizedZones {
+  const out: LocalizedZones = [];
   for (const z of zones) {
     // 2-letter ISO codes (US territories) live in CLDR territories, not here; the loader falls back to zone.name
     const name = subdivisions[cldrKey(z.iso)];
@@ -263,26 +264,20 @@ export function generate({ forceFetch = false } = {}) {
     LOADER_DTS + "declare const zones: Record<string, Loader<unknown>>;\nexport default zones;\n",
   );
 
-  // 2) locales/{locale}/zones/{CC}.js  (CLDR subdivision names, translated entries only)
+  // 2) locales/{locale}/zones.js  (CLDR subdivision names, translated entries only)
   const zoneLocales: string[] = [];
   for (const locale of sortedDir(cldrDir)) {
     const path = join(cldrDir, locale, "subdivisions.yml");
     if (!existsSync(path)) continue;
     const doc = readYaml(path);
     const subdivisions = (Object.values(doc)[0] as any)?.subdivisions ?? {};
-    const written: string[] = [];
+    const byCountry: LocalizedZonesFile = {};
     for (const r of withZones) {
       const localized = buildLocalizedZones(subdivisions, r.zones);
-      if (localized.length) {
-        out.module(`locales/${locale}/zones/${r.code}.js`, LocalizedZonesFile, localized);
-        written.push(r.code);
-      }
+      if (localized.length) byCountry[r.code] = localized;
     }
-    if (written.length) {
-      out.text(
-        `locales/${locale}/zones/index.js`,
-        GENERATED + `export default ${loaderMap(written.map((cc) => [cc, `./${cc}.js`]))};\n`,
-      );
+    if (Object.keys(byCountry).length) {
+      out.module(`locales/${locale}/zones.js`, LocalizedZonesFile, byCountry);
       zoneLocales.push(locale);
     }
   }
@@ -311,13 +306,13 @@ export function generate({ forceFetch = false } = {}) {
     "locales/index.js",
     GENERATED +
       `export const labels = ${loaderMap(labelLocales.map((l) => [l, `./${l}/labels.js`]))};\n\n` +
-      `export const zoneNames = ${loaderMap(zoneLocales.map((l) => [l, `./${l}/zones/index.js`]))};\n`,
+      `export const zoneNames = ${loaderMap(zoneLocales.map((l) => [l, `./${l}/zones.js`]))};\n`,
   );
   out.text(
     "locales/index.d.ts",
     LOADER_DTS +
       "export declare const labels: Record<string, Loader<unknown>>;\n" +
-      "export declare const zoneNames: Record<string, Loader<Record<string, Loader<unknown>>>>;\n",
+      "export declare const zoneNames: Record<string, Loader<unknown>>;\n",
   );
 
   // 4) meta.js

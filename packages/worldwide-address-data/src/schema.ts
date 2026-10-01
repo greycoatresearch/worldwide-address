@@ -6,7 +6,7 @@
  *   countries.js                     CountriesFile
  *   zones/{CC}.js                    ZonesFile             (countries with zones only)
  *   locales/{locale}/labels.js       LabelsFile            (worldwide label locales)
- *   locales/{locale}/zones/{CC}.js   LocalizedZonesFile    (CLDR subdivision locales, translated entries only)
+ *   locales/{locale}/zones.js        LocalizedZonesFile    (CLDR subdivision locales, translated entries only)
  *
  * Principles
  * - Field names are API-neutral camelCase. Mapping to API-specific names (zoneCode, provinceCode, ...)
@@ -183,13 +183,13 @@ export const ZonesFile = z
   });
 export type ZonesFile = z.infer<typeof ZonesFile>;
 
-// ── locales/{locale}/zones/{CC}.json ─────────────────────────
+// ── locales/{locale}/zones.js ────────────────────────────────
 
 /**
- * [code, name] list. Upstream order, translated entries only.
+ * [code, name] list for one country. Upstream order, translated entries only.
  * Tuples instead of an object: JS objects do not preserve the order of integer-like keys.
  */
-export const LocalizedZonesFile = z
+export const LocalizedZones = z
   .array(z.tuple([ZoneCode, z.string().min(1)]))
   .min(1)
   .check((ctx) => {
@@ -198,6 +198,13 @@ export const LocalizedZonesFile = z
       ctx.issues.push({ code: "custom", message: "duplicate zone code", input: ctx.value });
     }
   });
+export type LocalizedZones = z.infer<typeof LocalizedZones>;
+
+/**
+ * All zone names of one locale, keyed by country. Countries without any translation are omitted.
+ * One file per locale rather than per country keeps the module count small.
+ */
+export const LocalizedZonesFile = z.record(CountryCode, LocalizedZones);
 export type LocalizedZonesFile = z.infer<typeof LocalizedZonesFile>;
 
 // ── locales/{locale}/labels.json ─────────────────────────────

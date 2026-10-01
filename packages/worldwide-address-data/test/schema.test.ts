@@ -1,7 +1,7 @@
 /** The schemas must reject data that breaks single-file invariants. */
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { Country, LocalizedZonesFile, ZonesFile, type Country as CountryT } from "../src/schema.ts";
+import { Country, LocalizedZones, ZonesFile, type Country as CountryT } from "../src/schema.ts";
 
 const valid: CountryT = {
   layout: [["country"], ["city", "province", "zip"]],
@@ -63,5 +63,5 @@ test("rejects an alias that collides with another zone's code", () => {
 });
 
 test("rejects an empty localized name", () => {
-  assert.equal(LocalizedZonesFile.safeParse([["A", ""]]).success, false);
+  assert.equal(LocalizedZones.safeParse([["A", ""]]).success, false);
 });

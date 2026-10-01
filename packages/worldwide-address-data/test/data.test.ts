@@ -13,6 +13,7 @@ import { countries, loadLabels, loadZoneNames, loadZones, meta } from "../src/in
 import {
   CountriesFile,
   LabelsFile,
+  LocalizedZones,
   LocalizedZonesFile,
   MetaFile,
   SCHEMA_VERSION,
@@ -32,12 +33,12 @@ for (const cc of countryCodes) {
 const zoneCodes = (cc: string) => new Set(zones.get(cc)?.map((z) => z.code));
 
 /** locale → country → names, for every module listed in the indexes */
-const names = new Map<string, Map<string, LocalizedZonesFile>>();
+const names = new Map<string, Map<string, LocalizedZones>>();
 for (const locale of meta.locales.zones) {
-  const byCountry = new Map<string, LocalizedZonesFile>();
+  const byCountry = new Map<string, LocalizedZones>();
   for (const cc of withZones) {
     const n = await loadZoneNames(locale, cc);
-    if (n) byCountry.set(cc, LocalizedZonesFile.parse(n));
+    if (n) byCountry.set(cc, LocalizedZones.parse(n));
   }
   names.set(locale, byCountry);
 }
@@ -59,9 +60,7 @@ describe("indexes", () => {
     const expected = new Set([
       ...Object.keys(zoneLoaders).map((cc) => `zones/${cc}.js`),
       ...meta.locales.labels.map((l) => `locales/${l}/labels.js`),
-      ...[...names].flatMap(([l, byCountry]) =>
-        [...byCountry.keys()].map((cc) => `locales/${l}/zones/${cc}.js`),
-      ),
+      ...meta.locales.zones.map((l) => `locales/${l}/zones.js`),
     ]);
     const onDisk = readdirSync(DATA_DIR, { recursive: true, encoding: "utf8" })
       .map((p) => p.replaceAll("\\", "/"))
@@ -86,6 +85,13 @@ describe("zones", () => {
 });
 
 describe("locales", () => {
+  test("zone name files pass the schema and only cover countries with zones", async () => {
+    for (const locale of meta.locales.zones) {
+      const file = LocalizedZonesFile.parse((await zoneNames[locale]!()).default);
+      for (const cc of Object.keys(file)) assert.ok(countries[cc]?.hasZones, `${locale}: ${cc}`);
+    }
+  });
+
   for (const [locale, byCountry] of names) {
     test(`${locale}: zone names refer to existing zones`, () => {
       assert.ok(byCountry.size > 0, "locale listed without any zone names");
