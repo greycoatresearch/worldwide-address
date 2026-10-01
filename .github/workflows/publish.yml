@@ -1,0 +1,79 @@
+name: Publish
+
+# Publishes @greycoatresearch/worldwide-address-data when a version tag (v0.1.0, v0.2.0-rc.0, ...)
+# is pushed. Authenticates with npm trusted publishing (OIDC), so no npm token is stored here.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    # Protection rules live in the repository's "npm" environment. The npm trusted publisher
+    # must name the same environment.
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      PACKAGE: "@greycoatresearch/worldwide-address-data"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check tag matches package version
+        id: version
+        run: |
+          version=$(node -p 'require("./packages/worldwide-address-data/package.json").version')
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match package version $version"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Check whether this version is already published
+        id: published
+        run: |
+          if npm view "$PACKAGE@${{ steps.version.outputs.version }}" version >/dev/null 2>&1; then
+            echo "::notice::$PACKAGE@${{ steps.version.outputs.version }} is already on npm, skipping"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.published.outputs.exists != 'true'
+        run: pnpm test
+      - if: steps.published.outputs.exists != 'true'
+        run: pnpm generate
+      - name: Check generated data is up to date
+        if: steps.published.outputs.exists != 'true'
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --short | head -50
+            echo "::error::Generated data is out of date"
+            exit 1
+          fi
+
+      # pnpm pack applies publishConfig; npm publish does the trusted-publishing upload
+      - if: steps.published.outputs.exists != 'true'
+        run: pnpm --filter "$PACKAGE" pack --pack-destination "$RUNNER_TEMP/pack"
+      - name: Publish
+        if: steps.published.outputs.exists != 'true'
+        run: |
+          # Prerelease versions (with "-") go to the "next" dist-tag so "latest" stays stable
+          case "${{ steps.version.outputs.version }}" in
+            *-*) tag=next ;;
+            *) tag=latest ;;
+          esac
+          npm publish "$RUNNER_TEMP"/pack/*.tgz --access public --tag "$tag"

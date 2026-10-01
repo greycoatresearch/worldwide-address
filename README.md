@@ -55,6 +55,17 @@ Review removed or renamed zone codes carefully: saved addresses and form rules m
 and fails if it differs from the committed data, runs the tests, then installs the packed
 tarball on Node 22 and 24.
 
+### Releasing
+
+[`publish.yml`](.github/workflows/publish.yml) publishes the data package to npm when a version tag
+is pushed, using npm trusted publishing (no npm token in the repository):
+
+1. Bump `version` in `packages/worldwide-address-data/package.json` and commit.
+2. `git tag v<version> && git push origin v<version>`
+
+The tag must match the package version. Prerelease versions (`0.2.0-rc.0`) go to the `next`
+dist-tag. A version that is already on npm is skipped.
+
 ## License
 
 [MIT](LICENSE). The data is derived from Shopify/worldwide (MIT) and the Unicode CLDR
