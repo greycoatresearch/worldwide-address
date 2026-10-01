@@ -39,6 +39,7 @@ jobs:
           fi
 
       - run: pnpm test
+      - run: pnpm build
 
       # pack runs the build (prepack)
       - run: pnpm --filter @greycoatresearch/worldwide-address-data pack --pack-destination "$RUNNER_TEMP/pack"

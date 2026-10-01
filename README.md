@@ -9,10 +9,11 @@ localized zone names and field labels.
 
 ## Packages
 
-| Package                                                                        | Description                                                             |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| [`packages/worldwide-address-data`](packages/worldwide-address-data)           | Published package: generated data (`data/v1/`), loaders and Zod schemas |
-| [`packages/worldwide-address-generator`](packages/worldwide-address-generator) | Private: fetches upstream and generates the data                        |
+| Package                                                                        | Description                                                                                             |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| [`packages/worldwide-address-data`](packages/worldwide-address-data)           | Published package: generated data (`data/v1/`), loaders and Zod schemas                                 |
+| [`packages/worldwide-address-generator`](packages/worldwide-address-generator) | Private: fetches upstream and generates the data                                                        |
+| [`packages/example-form`](packages/example-form)                               | Private: React example of a localized address form (`pnpm --filter @greycoatresearch/example-form dev`) |
 
 The generator imports the schemas from the data package, validates every output file, and writes
 to `packages/worldwide-address-data/data/v1/` only if all files pass. The generated data is
@@ -30,7 +31,7 @@ pnpm install
 pnpm generate      # fetch the pinned upstream and regenerate data/v1
 pnpm test          # schema and data invariant tests
 pnpm test:smoke    # pack, install into a temp project, import it
-pnpm build         # build the data package to dist/
+pnpm build         # build the data package to dist/ and the example
 pnpm typecheck
 pnpm lint
 pnpm format
