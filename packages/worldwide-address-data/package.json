@@ -13,13 +13,13 @@
     "worldwide",
     "zones"
   ],
-  "homepage": "https://github.com/jangjunha/worldwide-address/tree/main/packages/worldwide-address-data#readme",
-  "bugs": "https://github.com/jangjunha/worldwide-address/issues",
+  "homepage": "https://github.com/greycoatresearch/worldwide-address/tree/main/packages/worldwide-address-data#readme",
+  "bugs": "https://github.com/greycoatresearch/worldwide-address/issues",
   "license": "MIT AND Unicode-DFS-2016",
   "author": "Greycoat Research Inc.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jangjunha/worldwide-address.git",
+    "url": "git+https://github.com/greycoatresearch/worldwide-address.git",
     "directory": "packages/worldwide-address-data"
   },
   "files": [

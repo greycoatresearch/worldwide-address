@@ -7,6 +7,8 @@ It gives a storefront what it needs to build a shipping address form: per-countr
 required fields, zip rules, zones (provinces/states) with the zone codes Shopify APIs accept,
 localized zone names and field labels.
 
+**Demo:** <https://greycoatresearch.github.io/worldwide-address/> ([source](packages/example-form))
+
 ## Packages
 
 | Package                                                                        | Description                                                                                             |
